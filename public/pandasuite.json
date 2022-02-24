@@ -19,80 +19,51 @@
       "events": [
         {
           "id": "triggerMarker",
-          "name": "Image",
-          "locale_name": {
-            "fr_FR": "Image"
-          }
+          "name": ""
         }
       ],
       "markers": [
         {
-          "params": [
-            { "id": "src", "name": "Source", "locale_name": {"fr_FR": "Source"}, "type": "String" }
-          ]
+          "hideSystemId": true
         }
-      ]
+      ],
+      "defaults": {
+        "markers": {
+          "description": {
+            "value": "%s",
+            "args": [
+              {
+                "key": "id"
+              }
+            ]
+          }
+        }
+      }
     },
 
-    "properties": [
-      {
-        "id": "searchTerm",
-        "name": "Search Term",
-        "locale_name": {
-          "fr_FR": "Terme de recherche"
-        },
-        "type": "String",
-        "value": "panda"
-      }
-    ],
-  
     "events": [
       {
-        "id": "imageChanged",
-        "name": "Image Changed",
+        "id": "keyPressed",
+        "name": "Key Pressed",
         "locale_name": {
-          "fr_FR": "Image Changée"
-        }
-      }
-    ],
-  
-    "actions": [
-      {
-        "id": "changeColor",
-        "name": "Change Color",
-        "params": [
-          {
-            "id": "backgroundColor",
-            "name": "Background Color",
-            "locale_name": {
-              "fr_FR": "Couleur de fond"
-            },
-            "type": "String",
-            "value": "#FFFFFF"
-          }
-        ]
-      }
-    ],
-
-    "synchronization": [
-      {
-        "id": "synchroImages",
-        "name": "Synchronize images",
-        "locale_name": {
-          "fr_FR": "Synchroniser images"
-        }
-      }
-    ],
-  
-    "resources": [
-      {
-        "id": "my_image.png",
-        "name": "Example image",
-        "locale_name": {
-          "fr_FR": "Image exemple"
+          "fr_FR": "Touche pressée"
         },
-        "type": "Image",
-        "localization": false
+        "queryable": {
+          "code": [16, 80],
+          "str": ["Shift", "P"],
+          "__desc_code": {
+            "name": "Pressed key codes",
+            "locale_name": {
+              "fr_FR": "Codes des touches pressées"
+            }
+          },
+          "__desc_str": {
+            "name": "Pressed key names",
+            "locale_name": {
+              "fr_FR": "Noms des touches pressées"
+            }
+          }
+        }
       }
     ]
 }

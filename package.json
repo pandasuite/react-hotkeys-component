@@ -1,5 +1,5 @@
 {
-  "name": "react-boilerplate-component",
+  "name": "react-hotkeys-component",
   "version": "1.0.0",
   "homepage": "./",
   "private": true,
@@ -11,11 +11,12 @@
     "@testing-library/user-event": "^7.1.2",
     "lodash": "^4.17.21",
     "pandasuite-bridge": "^4.4.0",
-    "pandasuite-bridge-react": "^2.4.0",
+    "pandasuite-bridge-react": "^2.5.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-app-polyfill": "^1.0.6",
     "react-dom": "^17.0.2",
+    "react-hotkeys-hook": "^3.4.4",
     "react-intl": "^5.18.1",
     "react-scripts": "3.4.0"
   },
