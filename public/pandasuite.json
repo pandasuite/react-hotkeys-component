@@ -4,18 +4,6 @@
   
     "system": {
       "localization": false,
-      "actions": [
-        {
-          "id": "toMarker",
-          "name": "Change Image",
-          "locale_name": {
-            "fr_FR": "Change Image"
-          },
-          "params": [
-            { "id": "useless", "name": "Useless", "locale_name": {"fr_FR": "Inutile"}, "type": "Boolean" }
-          ]
-        }
-      ],
       "events": [
         {
           "id": "triggerMarker",
@@ -24,7 +12,8 @@
       ],
       "markers": [
         {
-          "hideSystemId": true
+          "hideSystemId": true,
+          "hideActions": true
         }
       ],
       "defaults": {
