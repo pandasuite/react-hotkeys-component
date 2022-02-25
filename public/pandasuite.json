@@ -13,7 +13,8 @@
       "markers": [
         {
           "hideSystemId": true,
-          "hideActions": true
+          "hideActions": true,
+          "hideDefault": true
         }
       ],
       "defaults": {

@@ -1,3 +1,4 @@
 {
-  "main.button.record": "Enregistrer les combinaisons de touches"
+  "main.info.text": "Cliquez sur le bouton Enregistrer pour lancer l'enregistrement du raccourci clavier, tapez sur les touches correspondantes puis créez un marqueur en cliquant sur le +.",
+  "main.button.record": "Enregistrer"
 }

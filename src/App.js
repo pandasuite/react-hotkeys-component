@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { useIntl } from 'react-intl';
 
 import { usePandaBridge } from 'pandasuite-bridge-react';
-import { Button } from 'pandasuite-bridge-react/lib/ui';
+import { Button, Alert } from 'pandasuite-bridge-react/lib/ui';
 import { isHotkeyPressed, useHotkeys } from 'react-hotkeys-hook';
 
 import PandaBridge from 'pandasuite-bridge';
@@ -101,6 +101,9 @@ function App() {
   return (
     <div className="flex flex-col content-center items-center h-screen">
       <>
+        <Alert className="mt-4 mx-1">
+          {intl.formatMessage({ id: 'main.info.text' })}
+        </Alert>
         <Button loading={recording} primary={!recording} className="my-5" onClick={onRecord}>
           {intl.formatMessage({ id: 'main.button.record' })}
         </Button>

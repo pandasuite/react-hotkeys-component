@@ -1,3 +1,4 @@
 {
-  "main.button.record": "Register key combinations"
+  "main.info.text": "Click on the Record button to start recording the keyboard shortcut, press the corresponding keys and then create a marker by clicking on the +.",
+  "main.button.record": "Record"
 }
