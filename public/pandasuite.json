@@ -54,6 +54,23 @@
           }
         }
       }
-    ]
+    ],
+
+    "queryable": {
+      "code": [16, 80],
+      "str": ["Shift", "P"],
+      "__desc_code": {
+        "name": "Pressed key codes",
+        "locale_name": {
+          "fr_FR": "Codes des touches pressées"
+        }
+      },
+      "__desc_str": {
+        "name": "Pressed key names",
+        "locale_name": {
+          "fr_FR": "Noms des touches pressées"
+        }
+      }
+    }
 }
   
