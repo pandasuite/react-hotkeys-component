@@ -1,77 +1,117 @@
 {
-    "version": "2.0.0",
-    "main": "",
-  
-    "system": {
-      "localization": false,
-      "events": [
-        {
-          "id": "triggerMarker",
-          "name": ""
-        }
-      ],
-      "markers": [
-        {
-          "hideSystemId": true,
-          "hideActions": true,
-          "hideDefault": true
-        }
-      ],
-      "defaults": {
-        "markers": {
-          "description": {
-            "value": "%s",
-            "args": [
-              {
-                "key": "id"
-              }
-            ]
-          }
-        }
-      }
-    },
-
+  "meta": {
+    "stype": "hotkeys",
+    "componentURL": "https://github.com/pandasuite/react-hotkeys-component/",
+    "description": "Maps keyboard shortcuts to markers — each recorded key combination becomes a triggerable marker. Ideal for kiosks, physical button integration, and accessibility shortcuts.",
+    "locale_description": {
+      "fr_FR": "Associe des raccourcis clavier à des marqueurs — chaque combinaison de touches enregistrée devient un marqueur déclenchable. Idéal pour les bornes, l'intégration de boutons physiques et les raccourcis d'accessibilité."
+    }
+  },
+  "version": "2.0.0",
+  "main": "",
+  "system": {
+    "localization": false,
     "events": [
       {
-        "id": "keyPressed",
-        "name": "Key Pressed",
-        "locale_name": {
-          "fr_FR": "Touche pressée"
-        },
-        "queryable": {
-          "code": [16, 80],
-          "str": ["Shift", "P"],
-          "__desc_code": {
-            "name": "Pressed key codes",
-            "locale_name": {
-              "fr_FR": "Codes des touches pressées"
-            }
-          },
-          "__desc_str": {
-            "name": "Pressed key names",
-            "locale_name": {
-              "fr_FR": "Noms des touches pressées"
-            }
-          }
+        "id": "triggerMarker",
+        "name": "",
+        "description": "Fires when a specific keyboard shortcut marker is triggered.",
+        "locale_description": {
+          "fr_FR": "Se déclenche quand un marqueur de raccourci clavier spécifique est déclenché."
         }
       }
     ],
-
-    "queryable": {
-      "code": [16, 80],
-      "str": ["Shift", "P"],
-      "__desc_code": {
-        "name": "Pressed key codes",
-        "locale_name": {
-          "fr_FR": "Codes des touches pressées"
-        }
-      },
-      "__desc_str": {
-        "name": "Pressed key names",
-        "locale_name": {
-          "fr_FR": "Noms des touches pressées"
+    "markers": [
+      {
+        "hideSystemId": true,
+        "hideActions": true,
+        "hideDefault": true
+      }
+    ],
+    "defaults": {
+      "markers": {
+        "description": {
+          "value": "%s",
+          "args": [
+            {
+              "key": "id"
+            }
+          ]
         }
       }
     }
+  },
+  "events": [
+    {
+      "id": "keyPressed",
+      "name": "Key Pressed",
+      "locale_name": {
+        "fr_FR": "Touche pressée"
+      },
+      "queryable": {
+        "code": [
+          16,
+          80
+        ],
+        "str": [
+          "Shift",
+          "P"
+        ],
+        "__desc_code": {
+          "name": "Pressed key codes",
+          "locale_name": {
+            "fr_FR": "Codes des touches pressées"
+          },
+          "description": "Key code of the pressed key.",
+          "locale_description": {
+            "fr_FR": "Code de la touche pressée."
+          }
+        },
+        "__desc_str": {
+          "name": "Pressed key names",
+          "locale_name": {
+            "fr_FR": "Noms des touches pressées"
+          },
+          "description": "String representation of the pressed key combination.",
+          "locale_description": {
+            "fr_FR": "Représentation textuelle de la combinaison de touches pressée."
+          }
+        }
+      },
+      "description": "Fires when any registered keyboard shortcut is pressed.",
+      "locale_description": {
+        "fr_FR": "Se déclenche quand un raccourci clavier enregistré est pressé."
+      }
+    }
+  ],
+  "queryable": {
+    "code": [
+      16,
+      80
+    ],
+    "str": [
+      "Shift",
+      "P"
+    ],
+    "__desc_code": {
+      "name": "Pressed key codes",
+      "locale_name": {
+        "fr_FR": "Codes des touches pressées"
+      },
+      "description": "Last pressed key code, available for data binding.",
+      "locale_description": {
+        "fr_FR": "Dernier code de touche pressée, disponible pour le binding de données."
+      }
+    },
+    "__desc_str": {
+      "name": "Pressed key names",
+      "locale_name": {
+        "fr_FR": "Noms des touches pressées"
+      },
+      "description": "Last pressed key combination as string, available for data binding.",
+      "locale_description": {
+        "fr_FR": "Dernière combinaison de touches pressée en texte, disponible pour le binding de données."
+      }
+    }
+  }
 }
-  
